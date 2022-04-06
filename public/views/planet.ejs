@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planet</title>
+    <link rel="stylesheet" href="../styles/planet.css">
+    
+</head>
+<body>
+    <img src="../star-wars.svg" alt="Star Wars">
+
+    <form action="/planets" method="GET">
+        <button class="button">Return</button>
+    </form>
+    
+    <h1>PLANET INFO:</h1>
+    <div class="allPlanets">
+
+        <div class="planet">
+    <div id="name">Name: <%= planet.name %></div>
+    <div id="rotationPeriod">Rotation Period: <%= planet.rotation_period %></div>
+    <div id="orbitalPeriod">Orbital Period: <%= planet.orbital_period %></div>
+    <div id="diameter">Diameter: <%= planet.diameter %></div>
+    <div id="climate">Climate: <%= planet.climate %></div>
+    <div id="gravity">Gravity: <%= planet.gravity %></div>
+    <div id="terrain">Terrain: <%= planet.terrain %></div>
+    <div id="surfaceWater">Surface Water: <%= planet.surface_water %></div>
+    <div id="population">Population: <%= planet.population %></div>
+
+    </div>
+    </div>
+
+    <footer>
+        <h1>Website created by Lucas Pereira</h1>
+        <a href="https://github.com/luc4sdev" target="_blank" rel="external"><img src="../github.svg" alt="GitHub"></a>
+        <p>@2022 Lucas Pereira</p>
+    </footer>
+</body>
+</html>

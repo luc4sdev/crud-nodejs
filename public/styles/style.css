@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: rgb(235, 235, 235);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: -60px;
+    margin-bottom: 40px;
+
+}
+
+form > h1 {
+
+    font-size: 40px;
+    color: #fff;
+    margin-bottom: 10px;
+   
+}
+
+form > p {
+    color: black;
+    font-size: 12px;
+    margin-top: -5px;
+    margin-bottom: 10px;
+}
+
+#text {
+    border: 0 none;
+    border-radius: .8rem;
+    outline: none;
+    margin: 0 .5rem 0 0;
+    padding: .2rem .2rem .2rem .8rem;
+    margin-bottom: 10px;
+
+    background-color: #fff;
+    color: black;
+    height: 1.2rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.button {
+    border: 0 none;
+    border-radius: .8rem;
+
+    background-color: #fff;
+    height: 1.6rem;
+    width: 8rem;
+    font-family: 'Poppins', sans-serif;
+
+    transition: filter .2s;
+}
+
+#sortButton {
+
+    margin-bottom: 20px;
+}
+
+.button:hover {
+
+    cursor: pointer;
+    filter: brightness(.94);
+}
+
+
+h1 {
+    font-size: 60px;
+    margin-bottom: 80px;
+    color: #FFE919;
+    text-shadow: 
+               -2px -2px 2px black, 
+               -2px 2px 2px black,                    
+                2px -2px 2px black,                  
+                2px 2px 2px black;
+}
+
+
+
+.allPlanets {
+    border: 4px solid black;
+    border-radius: 8px;
+    display: grid;
+    justify-content:center;
+    padding: 12px;
+
+    background-color: black;
+    width: calc(30%);
+}
+
+.planet {
+    border: 2px solid #fff;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 0 4px;
+
+    background-color: rgb(53, 52, 52);
+    color: #fff;
+}
+
+footer {
+ background-color: rgb(54, 53, 53);
+ width: 100%; 
+ margin-top: 2px;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+}
+
+footer > h1 {
+    font-size: 40px;
+    color: #fff;
+}
+
+p {
+    font-size: 20px;
+    color: #fff;
+}

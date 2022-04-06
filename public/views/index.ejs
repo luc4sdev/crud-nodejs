@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planets</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    
+</head>
+<body>
+   
+    <img src="../star-wars.svg" alt="Star Wars">
+
+    
+
+    <form id="form" action="" method="GET">
+        <h1>Type the planet id:</h1>
+        <input id="text" type="text" placeholder="Planet id">
+        <p>(0-59)</p>
+        <button class="button" onclick="findPlanet()">Search</button>
+
+    </form>
+    <h1>PLANETS INFO:</h1>
+
+    <form action="planetsordered" id="sort">
+        <button class="button" id="sortButton">Sort by diameter</button>
+    </form>
+
+   
+
+    <div class="allPlanets">
+
+    <% planets.forEach(function(planet) { %>
+        <div class="planet">
+    <div id="name">Name: <%= planet.name %></div>
+    <div id="rotationPeriod">Rotation Period: <%= planet.rotation_period %></div>
+    <div id="orbitalPeriod">Orbital Period: <%= planet.orbital_period %></div>
+    <div id="diameter">Diameter: <%= planet.diameter %></div>
+    <div id="climate">Climate: <%= planet.climate %></div>
+    <div id="gravity">Gravity: <%= planet.gravity %></div>
+    <div id="terrain">Terrain: <%= planet.terrain %></div>
+    <div id="surfaceWater">Surface Water: <%= planet.surface_water %></div>
+    <div id="population">Population: <%= planet.population %></div>
+
+    </div>
+    <% }); %>
+     
+
+    </div>
+
+    <footer>
+        <h1>Website created by Lucas Pereira</h1>
+        <a href="https://github.com/luc4sdev" target="_blank" rel="external"><img src="../github.svg" alt="GitHub"></a>
+        <p>@2022 Lucas Pereira</p>
+    </footer>
+
+    <script>
+        function findPlanet() {
+            let p = text.value;
+            document.getElementById("form").action = `planets/${p}`;
+            
+    }
+    </script>
+</body>
+</html>
